@@ -5,7 +5,7 @@ package edu.nuaa.lambda;
  * @version 1.0
  * @date 2024/1/3 22:19
  */
-public class Test {
+public class InnerClassTest {
     public static void main(String[] args) {
         Runnable r1 = new Runnable() {
             @Override
