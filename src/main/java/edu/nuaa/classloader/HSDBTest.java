@@ -12,9 +12,14 @@ import java.io.IOException;
 public class HSDBTest {
     public static void main(String[] args) throws IOException {
         A obj = new B();
+        obj.getClass();
         System.in.read();
         System.out.println(obj);
     }
+}
+
+interface C{
+    void testC();
 }
 abstract class A {
     private void test(){
@@ -26,10 +31,15 @@ abstract class A {
     public abstract void sayHello();
 }
 
-class B extends A {
+class B extends A implements C{
     @Override
     public void sayHello() {
         System.out.println("hello, i am child B");
+    }
+
+    @Override
+    public void testC() {
+        System.out.println("testC");
     }
 }
 
